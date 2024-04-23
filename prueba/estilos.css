@@ -1,0 +1,14 @@
+
+.carousel-item{
+    height: 480px;
+}
+
+.carousel-item img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+#boton_tendencias {
+    margin: 100px !important;
+}

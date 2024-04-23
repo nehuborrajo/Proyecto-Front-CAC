@@ -1,0 +1,247 @@
+:root{
+    --bg-body:#181419;
+    --bg-menu:#1c49dd;
+    --bg-submenu: rgb(39, 106, 230);
+    --bg-searchbuttom: #0f0e0e;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--bg-body);
+    font-family: "nunito",sans-serif;
+    color:#fff;
+}
+
+header{
+    position: sticky;
+    z-index: 10;
+    top: 0%;
+}
+
+#menu-cac span a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu {
+    background-color: var(--bg-menu);
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 50px;    
+}
+
+.searchbar input {
+    border-radius: 10px;
+    padding: 3px;
+    outline: none;
+    border: 0;
+    padding-left: 40px;
+    width: 25vw;
+}
+
+.searchbar button {
+    background-color: var(--bg-searchbuttom);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 5px 0 0 5px;
+    color: #fff;
+
+}
+
+#nav-link{
+    display: flex;
+    justify-content: center;
+    list-style: none;   /*quita los puntos de la listas de link*/
+    gap: 50px;
+}
+
+#nav-link li {
+    padding-top: 13px;
+}
+
+.submenu {
+    margin: auto;
+}
+
+.submenu-horizontal {
+    display: flex;
+    list-style: none;
+    background-color: var(--bg-submenu);
+    justify-content: space-around;
+}
+
+.submenu-horizontal li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.submenu-horizontal li:hover {
+    background-color: #181419;
+}
+
+.submenu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+
+.submenu-horizontal li:hover .submenu-vertical {
+    display: block;
+}
+
+
+
+#nav-link li a{
+    text-decoration: none; /* saco los subrayado del link*/
+    color: inherit;        /*saco el color azul del link y que use el color que le pongo yo a mi body*/
+
+}
+
+h2{
+    font-size: 3em;
+}
+
+img{
+    width: 100vw;
+}
+
+/*#banner{
+    height: 85vh;
+    /*ESTILO PARA LA IMGEN DE FONDO*/
+    /*background-image: url(https://img.freepik.com/psd-gratis/fondo-jugador-accesorios_1419-2365.jpg?size=626&ext=jpg&ga=GA1.1.1488620777.1712793600&semt=ais);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+#texto-banner{
+    border: 5px solid #ffffff;
+    margin:0 auto ;
+    width:70vw ;
+    min-width: 500px;
+    padding: 50px;
+}*/
+
+#buscador{
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;/*el buscador queda arriba por el "reverse" si lo quiero abajo saco "reverse" */
+    
+    justify-content:center;    /*el eje va estar en el centro y va ser vertical */
+    align-items: center;/*lo alinia al centro al buscador*/
+}
+
+.carosuel {
+    position: absolute;
+    z-index: 0;
+}
+
+.carousel-indicator {
+    z-index: 0;
+}
+
+.carousel-item{
+    height: 480px;
+}
+
+.carousel-item img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+#boton_tendencias {
+    margin: 100px !important;
+}
+#boton_tendencias a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#tendencias {
+    height: 100vh;
+}
+
+#tend-title {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+} 
+
+/*#grid-games {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: 4fr 4fr;
+    grid-row-gap: 20px;
+}*/
+
+.game-item img {
+    width: 250px;
+    height: 300px;
+}
+
+.games-grid {
+    height: 800px;
+    display: grid;
+    margin-top: 10x;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 300px);
+
+    /*ubicacion de la grilla respecto de la etiqueta padre*/
+    justify-content: center;
+    align-content: center;
+
+    /*unico los items con respecto a su celda*/
+    justify-items: center;
+    align-items: center;
+
+    grid-column-gap: 20px;
+    grid-row-gap: 120px;
+}
+
+.game-item-detail {
+    margin-bottom: 30px;
+}
+
+
+
+footer {
+    background-color: var(--bg-menu);
+    margin-top: 100px;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer a:hover {
+    color:rgba(0, 0, 0, 0.5)
+}
+
+
+
+
