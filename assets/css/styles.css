@@ -24,6 +24,7 @@ header{
 #menu-cac span a {
     text-decoration: none;
     color: inherit;
+    font-size: 1.1em;
 }
 
 .menu {
@@ -67,6 +68,25 @@ header{
 
 #nav-link li {
     padding-top: 13px;
+}
+
+.nav_item {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+.nav_item i {
+    margin-top: 10px;
+    margin-right: 8px;
+}
+
+.nav_item li {
+    padding-top: 0;   
+}
+
+.nav_item:hover {
+    color:rgba(0, 0, 0, 0.8)
 }
 
 .submenu {
