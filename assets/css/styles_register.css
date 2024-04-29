@@ -1,0 +1,121 @@
+:root{
+    --bg-body:#181419;
+    --bg-menu:#1c49dd;
+    --bg-submenu: rgb(39, 106, 230);
+    --bg-searchbuttom: #0f0e0e;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/fondoregistro.jpg);
+    font-family: "nunito",sans-serif;
+    color:#ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#form_is {
+    background-color: #24253c;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 25px;
+    /*width: 30vw;*/
+}
+
+#form_reg {
+    background-color: #24253c;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 500px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 25px;
+    /*width: 30vw;*/
+}
+
+form h2 {
+    font-size: 30px;
+    color: #edf0f0;
+    margin-bottom: 35px;
+}
+
+input {
+    padding: 17px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid #603452;
+    outline: none;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 16px;
+    
+}
+
+::placeholder {
+    color: #898798;
+}
+
+.btn {
+    background-color: #e53854;
+    border: 2px solid #e53854;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #f33f5a;
+    border: 2px solid #f33f5a;
+}
+
+.div_checkbox {
+    display: flex;
+    justify-content: center;
+}
+
+.div_checkbox p {
+    padding-top: 0;
+}
+
+.div_checkbox input {
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+form li {
+    list-style: none;
+}
+
+form li a {
+    color: inherit;
+}
+
+#li_home {
+    margin-top: 25px;
+    margin-bottom: -10px;
+}
+
+@media (max-width: 991px) {
+
+    body {
+        padding: 30px;
+    }
+
+    form {
+        width: 340px;
+        /*width: 60vw;*/
+    }
+
+    form li {
+        display: block;
+    }
+}
