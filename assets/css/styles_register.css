@@ -44,7 +44,7 @@ body {
     /*width: 30vw;*/
 }
 
-form h2 {
+.form h2 {
     font-size: 30px;
     color: #edf0f0;
     margin-bottom: 35px;
@@ -59,7 +59,35 @@ input {
     margin-bottom: 30px;
     color: #fff;
     font-size: 16px;
-    
+}
+
+/*#selector {
+    padding: 17px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid #603452;
+    outline: none;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-size: 16px;
+}*/
+
+select {
+    padding: 17px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid #603452;
+    outline: none;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-size: 16px;
+}
+option {
+    color: #0f0e0e;
+}
+
+#op_default {
+    color: #898798;
 }
 
 ::placeholder {
@@ -91,15 +119,15 @@ input {
     margin-right: 5px;
 }
 
-form li {
+div p {
     list-style: none;
 }
 
-form li a {
+div p a {
     color: inherit;
 }
 
-#li_home {
+#text_home {
     margin-top: 25px;
     margin-bottom: -10px;
 }
@@ -110,12 +138,30 @@ form li a {
         padding: 30px;
     }
 
-    form {
-        width: 340px;
-        /*width: 60vw;*/
+    #form_reg {
+        /*width: 340px;*/
+        width: 70vw;
+    }
+    #form_is {
+        /*width: 340px;*/
+        width: 70vw;
+    }
+}
+
+@media (max-width: 650px) {
+
+    body {
+        padding: 30px;
     }
 
-    form li {
-        display: block;
+    #form_reg {
+        /*width: 340px;*/
+        width: 90vw;
+        height: 50%;
+    }
+    #form_is {
+        /*width: 340px;*/
+        width: 90vw;
+        height: 50%;
     }
 }

@@ -9,20 +9,27 @@
     <body>
         <main>
             
-                <form id="form_reg">
+                <div id="form_reg" class="form">
                     
                     <h2>Registrarse</h2>
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Apellido">
-                    <input type="email" placeholder="Correo">
-                    <input type="password" placeholder="Contraseña">
-                    <input type="password" placeholder="Confirmar Contraseña">
+                    <input type="text" placeholder="Nombre" id="nombreUsuario" name="nombreUsuarioIngresado">
+                    <input type="text" placeholder="Apellido" id="apellidoUsuario" name="apellidoUsuarioIngresado">
+                    <input type="email" placeholder="Correo" id="emailUsuario" name="emailUsuarioIngresado">
+                    <select id="pais" name="nacionalidadUsuarioIngresada">
+                        <option id="op_default">-- Seleccione un Pais --</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BR">Brasil</option>
+                        <option value="CO">Colombia</option>
+                    </select>
+                    <input type="password" placeholder="Contraseña" id="contraseniaUsuario" name="contraseniaUsuarioIngresado" minlength="6" maxlength="12">
+                    <input type="password" placeholder="Confirmar Contraseña" minlength="6" maxlength="12">
 
                     <input type="submit" class="btn" value="Enviar">
 
-                    <li>¿Ya estas registrado? <a href="inicioSesion.html">Iniciar Sesion</a></li>
-                    <li id="li_home"><a href="index.html">INICIO</a></li>
-                </form>
+                    <p>¿Ya estas registrado? <a href="inicioSesion.html">Iniciar Sesion</a></p>
+                    <p id="text_home"><a href="index.html">INICIO</a></p>
+                
+                </div>
         </main>
     </body>
 </html>
