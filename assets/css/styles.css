@@ -140,37 +140,6 @@ img{
     width: 100vw;
 }
 
-/*#banner{
-    height: 85vh;
-    /*ESTILO PARA LA IMGEN DE FONDO*/
-    /*background-image: url(https://img.freepik.com/psd-gratis/fondo-jugador-accesorios_1419-2365.jpg?size=626&ext=jpg&ga=GA1.1.1488620777.1712793600&semt=ais);
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-}
-
-#texto-banner{
-    border: 5px solid #ffffff;
-    margin:0 auto ;
-    width:70vw ;
-    min-width: 500px;
-    padding: 50px;
-}*/
-
-#buscador{
-    height: 100vh;
-    display: flex;
-    flex-direction: column-reverse;/*el buscador queda arriba por el "reverse" si lo quiero abajo saco "reverse" */
-    
-    justify-content:center;    /*el eje va estar en el centro y va ser vertical */
-    align-items: center;/*lo alinia al centro al buscador*/
-}
-
 .carosuel {
     position: absolute;
     z-index: 0;
@@ -244,17 +213,145 @@ img{
 }
 
 
+/*PROXIMOS LANZAMIENTOS*/
+
+#pl-title {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.swiper {
+    margin-top: 40px;
+}
+
+.swiper-slide {
+    margin-bottom: 50px;
+    background-color: #fff;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    height: 420px;
+    width: 295px;
+    position: relative;
+}
+
+.swiper-slide img {
+    width: 295px;
+    border-radius: 15px;
+    height: 420px;
+}
+
+.swiper-txt {
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.swiper-txt p {
+    color: #faf9f9;
+    font-size: 20px;
+}
+
+@media (max-width: 991px){
+
+    #proxLanzam {
+        width: 300px;
+    }
+    
+    .swiper{
+        padding: 0 70px;
+        width: 400px;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+    }
+
+    
+}
+
+@media (max-width: 600px){
+
+    .swiper {
+        width: 300px;
+    }
+
+}
+
+
+
+
+
+/*FOOTER*/
+
 
 footer {
     background-color: var(--bg-menu);
     margin-top: 100px;
-    padding: 20px;
+    padding-top: 20px;
+}
+
+.footer-redes {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.redes i {
+    font-size: 2em;
+}
+
+.footer-fila-1 {
+    display: flex;
+    align-items: center;
+}
+
+.footer-fila-2 p{
+    text-align: center;
+    color: #e3dce6;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.footer-fila-3 div{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-fila-3 a {
+    padding-top: 5px;
+    font-size: 1.2em;
+}
+
+.footer-fila-3 i {
+    margin-right: 8px;
+}
+
+.footer-terms {
+    margin-top: 20px;
+    padding: 10px 0;
+    color: #89848b;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1.2em;
+}
+
+.footer-terms a:hover {
+    color:rgba(253, 253, 253, 0.637)
 }
 
 footer a {
     text-decoration: none;
     color: inherit;
-    padding-left: 10px;
     padding-right: 10px;
 }
 
@@ -262,6 +359,14 @@ footer a:hover {
     color:rgba(0, 0, 0, 0.5)
 }
 
+.info-imp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
 
 
 
+@media (max-width: 991px) {
+}
