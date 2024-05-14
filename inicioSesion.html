@@ -3,30 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio Sesion</title>
     <link rel="stylesheet" href="assets/css/styles_register.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Inicio Sesion</title>
+    
 </head>
 <body>
     <main>
             
-        <div id="form_is" class="form">
+        <form id="form_is" class="form">
             
-            <h2>Iniciar Sesion</h2>
-            <input type="email" placeholder="Correo">
-            <input type="password" placeholder="Contraseña">
+            <h2 class="animate__animated animate__zoomIn">Iniciar Sesion</h2>
+            
+            <div class="div_inp">
+                <input type="text" placeholder="Correo" id="emailUsuario" name="emailUsuarioIngresado">
+                <div id="errorEmail"></div>
+            </div>
+            <div class="div_inp">
+                <input type="password" placeholder="Contraseña" id="contraseniaUsuario" name="contraseniaUsuarioIngresado">
+                <div id="errorContrasenia"></div>
+            </div>
+            
             <div class="div_checkbox">
                 <input type="checkbox">
                 <p>Recordar informacion</p>
             </div>
 
-            <input type="submit" class="btn" value="Iniciar Sesion">
+            <input type="submit" class="btn" value="Enviar" id="submi">
 
             <p>¿No estas registrado? <a href="registrarse.html">Registrarse</a></p>
             <p id="text_home"><a href="index.html">INICIO</a></p>
 
-        </div>
+        </form
         
-</main>
+    </main>
+
+    <script src="assets/js/inicioSesion.js"></script>
 
    
 </body>

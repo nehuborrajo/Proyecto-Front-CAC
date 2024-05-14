@@ -1,3 +1,10 @@
+
+function cambio(){
+    let imagen = document.getElementById("portada");
+    imagen.src = "assets/js/pic1.png";
+}
+
+
 var swiper = new Swiper(".mySwiper", {
 
     slidesPerView: 1,
