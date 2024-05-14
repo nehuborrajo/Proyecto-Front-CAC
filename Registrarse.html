@@ -3,33 +3,60 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="assets/css/styles_register.css">
         <title>Registro</title>
     </head>
     <body>
         <main>
             
-                <div id="form_reg" class="form">
+                <form action="#" method="get" id="form_reg" class="form">
                     
-                    <h2>Registrarse</h2>
-                    <input type="text" placeholder="Nombre" id="nombreUsuario" name="nombreUsuarioIngresado">
-                    <input type="text" placeholder="Apellido" id="apellidoUsuario" name="apellidoUsuarioIngresado">
-                    <input type="email" placeholder="Correo" id="emailUsuario" name="emailUsuarioIngresado">
-                    <select id="pais" name="nacionalidadUsuarioIngresada">
-                        <option id="op_default">-- Seleccione un Pais --</option>
-                        <option value="AR">Argentina</option>
-                        <option value="BR">Brasil</option>
-                        <option value="CO">Colombia</option>
-                    </select>
-                    <input type="password" placeholder="Contraseña" id="contraseniaUsuario" name="contraseniaUsuarioIngresado" minlength="6" maxlength="12">
-                    <input type="password" placeholder="Confirmar Contraseña" minlength="6" maxlength="12">
+                    <h2 class="animate__animated animate__zoomIn">Registrarse</h2>
+                    
+                    <div class="div_inp">
+                        <input type="text" placeholder="Nombre" id="nombreUsuario" name="nombreUsuarioIngresado">
+                        <div id="errorNombre"></div>
+                    </div>
+                    <div class="div_inp">
+                        <input type="text" placeholder="Apellido" id="apellidoUsuario" name="apellidoUsuarioIngresado">
+                        <div id="errorApellido"></div>
+                    </div>
+                    <div class="div_inp">
+                        <input type="text" placeholder="Correo" id="emailUsuario" name="emailUsuarioIngresado">
+                        <div id="errorEmail"></div>
+                    </div>
+                    <div class="div_inp">
+                        <select id="genero" name="nacionalidadUsuarioIngresada">
+                            <option id="op_default">-- Seleccione su Genero --</option>
+                            <option value="MA">Hombre</option>
+                            <option value="FM">Mujer</option>
+                            <option value="OT">Otro</option>
+                        </select>
+                        <div id="errorGenero"></div>
+                    </div class="div_inp">
+                    <div class="div_inp">
+                        <input type="password" placeholder="Contraseña" id="contraseniaUsuario" name="contraseniaUsuarioIngresado">
+                        <div id="errorContrasenia"></div>
+                    </div>
+                    <div class="div_check">
+                        <div class="div_checkbox">
+                            <input type="checkbox" id="terminos">
+                            <p>Acepto Terminos y Condiciones</p>
+                        </div>
+                        <div id="errorTerminos"></div>
+                    </div>
+                    
 
-                    <input type="submit" class="btn" value="Enviar">
+                    <input type="submit" class="btn" value="Enviar" id="submi">
 
                     <p>¿Ya estas registrado? <a href="inicioSesion.html">Iniciar Sesion</a></p>
                     <p id="text_home"><a href="index.html">INICIO</a></p>
                 
-                </div>
+                <form>
         </main>
+
+        <script src="assets/js/registro.js"></script>
     </body>
 </html>
