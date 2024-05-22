@@ -4,6 +4,9 @@
     --bg-submenu: rgb(39, 106, 230);
     --bg-searchbuttom: #0f0e0e;
     --bg-bodyy: #fff;
+    --color-wrong: red;
+    --color-footlinks: #89848b;
+    --bg-menuresp: #0d1736;
 }
 *{
     margin: 0;
@@ -23,7 +26,6 @@ header{
     position: sticky;
     z-index: 10;
     top: 0%;
-    width: 100vw;
 }
 
 #menu-cac span a {
@@ -66,34 +68,6 @@ header{
     border-radius: 5px 0 0 5px;
     color: #fff;
 }
-
-/*#nav-link{
-    display: flex;
-    justify-content: center;
-    list-style: none;   
-    gap: 50px;
-}
-
-#nav-link li {
-    padding-top: 13px;
-}
-
-#nav-link li a{
-    text-decoration: none;
-    color: inherit;        
-
-}
-
-.nav_item {
-    display: flex;
-    align-items: center;
-    font-size: 1.1em;
-}
-
-.nav_item i {
-    margin-top: 10px;
-    margin-right: 8px;
-}*/
 
 #nav-link i {
     margin-top: 10px;
@@ -264,10 +238,11 @@ header{
 
 .fila4 {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.col-reseña {
+.col-resenia {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -278,18 +253,22 @@ header{
     border-radius: 1%;
 }
 
-.form input{
-    padding: 8px;
-    border-radius: 15px;
-    margin-bottom: 20px;
-    outline: none;
+.div-inp{
+    margin-top: 15px;
 }
 
-.form textarea {
+.div-inp input{
     padding: 8px;
     border-radius: 15px;
-    margin-bottom: 20px;
     outline: none;
+    width: 100%;
+}
+
+.div-inp textarea {
+    padding: 8px;
+    border-radius: 15px;
+    outline: none;
+    width: 100%;
 }
 
 .btn {
@@ -297,6 +276,7 @@ header{
     border: 2px solid #ffffff;
     cursor: pointer;
     color: inherit;
+    margin-top: 20px;
 }
 
 .btn:hover {
@@ -304,8 +284,17 @@ header{
     border: 2px solid var(--bg-menu);
 }
 
+.div-img img{
+    width: 450px;
+    height: 350px;
+    text-align: center;
+}
 
-
+.div-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
 
 
 
@@ -359,7 +348,7 @@ footer {
 .footer-terms {
     margin-top: 20px;
     padding: 10px 0;
-    color: #89848b;
+    color: var(--color-footlinks);
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     font-size: 1.2em;
@@ -388,8 +377,8 @@ footer a:hover {
 
 
 
-
 /*************************************  MEDIA QUARIES  ****************************************/
+
 
 @media (max-width: 991px){
     
@@ -491,7 +480,7 @@ footer a:hover {
         top: 0;
         right: -100%;
         z-index: 100;
-        background-color: #0d1736;
+        background-color: var(--bg-menuresp);
         transition: all 0.2s ease-in-out;
     }
 
@@ -537,7 +526,7 @@ footer a:hover {
     .footer-terms-menu {
         margin-top: 20px;
         padding: 10px 0;
-        color: #89848b;
+        color: var(--color-footlinks);
         text-align: center;
         margin-bottom: 10px;
     }   
@@ -545,4 +534,25 @@ footer a:hover {
     .footer-terms-menu a{
         font-size: 15px;
     }
+}
+
+
+/****************************        CLASES JS       ********************************/
+
+.error{
+    color: var(--color-wrong) !important;
+}
+
+.cuadroError{
+    border-color: var(--color-wrong) !important;
+    margin: 0;
+    padding: 0;
+}
+
+.oculto{
+    display: none !important;
+}
+
+.cuadroBien {
+    border-color: inherit !important;
 }
