@@ -109,14 +109,16 @@ header{
     padding-left: 30px;
 }
 
-.menuu li a {
+.menuuu li a {
     display: inline-block;
     text-decoration: none;
     color: inherit;
     text-align: center;
     transition: 0.15s ease-in-out;
     position: relative;
+    list-style: none;
 }
+
 
 .iconPl {
     display: none;
@@ -497,7 +499,7 @@ footer a:hover {
         display: block;
     }
 
-    .menuu li a::after {
+    .menuuu li a::after {
         content: "";
         position: absolute;
         bottom: 0;

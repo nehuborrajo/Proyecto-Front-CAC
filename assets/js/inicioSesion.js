@@ -1,7 +1,5 @@
 let formRegistro = document.querySelector("#form_is") //selecciono el form
 
-console.log("Hola")
-
 let validarDatos = (event) => {
     event.preventDefault(); //detengo el evento 'submit' (envio de datos)
 
@@ -9,54 +7,6 @@ let validarDatos = (event) => {
     let validacion = true;
     
     //validamos antes de enviar los datos
-
-    //NOMBRE
-    /*let inputNombre = document.querySelector("#nombreUsuario");
-    if(inputNombre.value === ""){
-        let divError = document.querySelector("#errorNombre")
-        divError.textContent = "El campo no debe quedar vacio"
-        divError.classList.add("error")
-        inputNombre.classList.add("cuadroError")
-
-        validacion = false;
-    }
-    else if(inputNombre.value.length < 3 || inputNombre.value.length > 12){    
-        let divError = document.querySelector("#errorNombre")
-        divError.textContent = "El campo debe tener minimo 3 caracteres y maximo 12"
-        divError.classList.add("error")
-        inputNombre.classList.add("cuadroError")
-
-        validacion = false;
-    }
-    else{
-        let divError = document.querySelector("#errorNombre")
-        divError.classList.add("oculto")
-        inputNombre.classList.add("cuadroBien")
-    }
-
-    //APELLIDO
-    let inputApellido = document.querySelector("#apellidoUsuario");
-    if(inputApellido.value === ""){
-        let divError = document.querySelector("#errorApellido")
-        divError.textContent = "El campo no debe quedar vacio"
-        divError.classList.add("error")
-        inputApellido.classList.add("cuadroError")
-
-        validacion = false;
-    }
-    else if(inputApellido.value.length < 3 || inputApellido.value.length > 12){    
-        let divError = document.querySelector("#errorApellido")
-        divError.textContent = "El campo debe tener minimo 3 caracteres y maximo 12"
-        divError.classList.add("error")
-        inputApellido.classList.add("cuadroError")
-
-        validacion = false;
-    }
-    else{
-        let divError = document.querySelector("#errorApellido")
-        divError.classList.add("oculto")
-        inputApellido.classList.add("cuadroBien")
-    }*/
 
     //CONTRASEÑA
     let inputContrasenia = document.querySelector("#contraseniaUsuario")
@@ -99,40 +49,6 @@ let validarDatos = (event) => {
         let divError = document.querySelector("#errorEmail")
         divError.classList.add("oculto")
     }
-
-
-    //GENERO
-    /*let inputNacionalidad = document.querySelector("#genero")
-    if(inputNacionalidad.value === "-- Seleccione su Genero --"){
-        let divError = document.querySelector("#errorGenero")
-        divError.textContent = "Debe seleccionar un genero"
-        divError.classList.add("error")
-        inputNacionalidad.classList.add("cuadGenError")
-
-        validacion = false;
-    }
-    else{
-        let divError = document.querySelector("#errorGenero")
-        divError.classList.add("oculto")
-        inputNacionalidad.classList.add("cuadroBien")
-    }
-
-    //CHECKBOX
-    let check = document.querySelector("#terminos").checked;
-    if(check ==  false){
-        let divError = document.querySelector("#errorTerminos")
-        let div = document.querySelector(".div_check")
-        divError.textContent = "Debe aceptar los terminos y condiciones"
-        divError.classList.add("error")
-        div.classList.add("checkbox_error")
-
-        validacion = false;
-    }
-    else{
-        let divError = document.querySelector("#errorTerminos")
-        divError.classList.add("oculto")
-    }*/
-
 
 
     if(validacion){ //si esta todo ok, enviamos los datos
