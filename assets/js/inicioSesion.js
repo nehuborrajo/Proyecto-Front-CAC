@@ -54,6 +54,7 @@ let validarDatos = (event) => {
     if(validacion){ //si esta todo ok, enviamos los datos
 
     formRegistro.submit(); 
+    alert("Inicio sesion correctamente"); 
     }
 }
 

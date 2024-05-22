@@ -100,7 +100,8 @@ let validarDatos = (event) => {
 
     if(validacion){ //si esta todo ok, enviamos los datos
 
-    resenia.submit(); 
+    resenia.submit();
+    alert("Reseña enviada correctamente");  
     }
 }
 

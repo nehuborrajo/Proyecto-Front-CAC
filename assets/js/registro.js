@@ -97,6 +97,7 @@ let validarDatos = (event) => {
     else{
         let divError = document.querySelector("#errorEmail")
         divError.classList.add("oculto")
+        inputEmail.classList.add("cuadroBien")
     }
 
 
@@ -136,7 +137,8 @@ let validarDatos = (event) => {
 
     if(validacion){ //si esta todo ok, enviamos los datos
 
-    formRegistro.submit(); 
+    formRegistro.submit();
+    alert("Registrado correctamente"); 
     }
 }
 
