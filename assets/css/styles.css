@@ -103,6 +103,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    list-style: none;
 }
 
 .menuu {
@@ -118,13 +119,14 @@ header{
     padding-left: 30px;
 }
 
-.menuu li a {
+.menuuu li a {
     display: inline-block;
     text-decoration: none;
     color: inherit;
     text-align: center;
     transition: 0.15s ease-in-out;
     position: relative;
+    list-style: none;
 }
 
 .iconPl {
@@ -231,12 +233,11 @@ header{
     filter: brightness(0.6);
 }
 
-#boton_tendencias {
+.boton_tendencias {
     margin: 50 !important;
-    position:relative;
 }
 
-#boton_tendencias a{
+.carousel-caption a{
     text-decoration: none;
     color: inherit;
 }
@@ -547,7 +548,7 @@ footer a:hover {
         display: block;
     }
 
-    .menuu li a::after {
+    .menuuu li a::after {
         content: "";
         position: absolute;
         bottom: 0;
