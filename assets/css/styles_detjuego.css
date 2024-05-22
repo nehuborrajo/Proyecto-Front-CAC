@@ -94,6 +94,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    list-style: none;
 }
 
 .menuu {
@@ -109,7 +110,7 @@ header{
     padding-left: 30px;
 }
 
-.menuuu li a {
+.menuuu li a{
     display: inline-block;
     text-decoration: none;
     color: inherit;
@@ -118,7 +119,6 @@ header{
     position: relative;
     list-style: none;
 }
-
 
 .iconPl {
     display: none;
@@ -152,7 +152,6 @@ header{
 .redes-menu {
     display: none;
 }
-
 
 
 /*************************************  MAIN  ****************************************/
