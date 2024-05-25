@@ -48,6 +48,7 @@ let validarDatos = (event) => {
     else{
         let divError = document.querySelector("#errorEmail")
         divError.classList.add("oculto")
+        inputEmail.classList.add("cuadroBien")
     }
 
 
