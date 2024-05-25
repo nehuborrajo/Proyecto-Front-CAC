@@ -83,12 +83,16 @@ let validarDatos = (event) => {
         divError.textContent = "Este campo no puede quedar vacio"
         divError.classList.add("error")
         inputOpinion.classList.add("cuadroError")
+
+        validacion = false;
     }
     else if(inputOpinion.value.length > 10){
         let divError = document.querySelector("#errorOpinion")
         divError.textContent = "Supero el maximo de 200 caracteres"
         divError.classList.add("error")
         inputOpinion.classList.add("cuadroError")
+
+        validacion = false;
     }
     else{
         let divError = document.querySelector("#errorOpinion")
